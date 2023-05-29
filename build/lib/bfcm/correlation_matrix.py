@@ -26,8 +26,10 @@ def correlation_matrix(data, types, weights = None):
     attributes = data.columns
 
     # Remove outcome class
-    X = data.iloc[:,:-1]
-    
+    if outcome:
+        X = data.iloc[:,:-1]
+    else: 
+        X = data
 
     # Create dataset with symbolic values for numerical features
     if "nominal" in types[:-1]:
