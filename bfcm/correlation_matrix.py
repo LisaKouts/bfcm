@@ -5,7 +5,7 @@ from scipy.stats import chi2_contingency
 from statsmodels.stats.weightstats import DescrStatsW
 
 
-def correlation_matrix(data, types, weights = None):
+def correlation_matrix(data, types, outcome = True, weights = None):
     """ Generate weighted correlation matrix for a given dataframe.
 
     :param data: data set
