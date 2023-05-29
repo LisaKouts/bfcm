@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name='bfcm',
-    version='0.0.11',
+    version='0.0.12',
     author='Lisa Koutsoviti, Gonzalo Napoles',
     author_email='lisa.koutsoviti@uhasselt.be',
     description='A library that quantifies implicit bias in tabular data with Fuzzy Cognitive Maps',
